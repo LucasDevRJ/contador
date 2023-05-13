@@ -1,9 +1,20 @@
 let campoValor = document.getElementById("valor");
-let botaoIncremento = document.getElementById("botao-incremento");
-let botaoDecremento = document.getElementById("botao-decremento");
+const botaoIncremento = document.getElementById("botao-incremento");
+const botaoDecremento = document.getElementById("botao-decremento");
 
 let valor = campoValor.value;
 valor = 0;
+campoValor.textContent = valor;
 
-console.log(valor);
+function incrementaValor() {
+	valor++;
+	campoValor.textContent = valor;
+}
 
+function decrementaValor() {
+	valor--;
+	campoValor.textContent = valor;
+}
+
+botaoIncremento.addEventListener("click", incrementaValor);
+botaoDecremento.addEventListener("click", decrementaValor);
