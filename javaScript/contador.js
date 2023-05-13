@@ -9,11 +9,23 @@ campoValor.textContent = valor;
 function incrementaValor() {
 	valor++;
 	campoValor.textContent = valor;
+	trocaCor();
 }
 
 function decrementaValor() {
 	valor--;
 	campoValor.textContent = valor;
+	trocaCor();
+}
+
+function trocaCor() {
+	if (valor > 0) {
+		campoValor.style.color = "limeGreen";
+	} else if (valor < 0){
+		campoValor.style.color = "red";
+	} else {
+		campoValor.style.color = "black";
+	}
 }
 
 botaoIncremento.addEventListener("click", incrementaValor);
