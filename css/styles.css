@@ -33,8 +33,24 @@ main {
 }
 
 .botao {
+	background-color: #DCDCDC;
+	border: none;
 	cursor: pointer;
 	font-size: 50px;
 	padding: 20px 0;
 	width: 10%;
+}
+
+@media screen and (min-width: 280px) and (max-width: 456px) {
+	.botoes {
+		gap: 30px;
+	}
+
+	.botao {
+		width: 37%;
+	}
+}
+
+@media screen and (min-width: 457px) and (max-width: 1280px) {
+	
 }
