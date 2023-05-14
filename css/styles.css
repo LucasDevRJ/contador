@@ -52,5 +52,7 @@ main {
 }
 
 @media screen and (min-width: 457px) and (max-width: 1280px) {
-	
+	.botao {
+		width: 27%;
+	}
 }
